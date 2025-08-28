@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Controle de Fronteiras</h1>
+    País de Origem: <input  name="txtori" id="txtori"> 
+    <input type="button" value="Verificar País" onclick="verificarPais()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificarPais() {
+            var txtori = document.querySelector('input#txtori')
+            var res = document.querySelector('div#res')
+            var ori = txtori.value
+             res.innerHTML = `<p>Vivendo em ${ori}</p>`
+
+            if (ori.toLowerCase() === 'brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
