@@ -60,6 +60,6 @@ function finalizar() {
 
     }
 }
-// CRIAR A LOGICA,ASSIM ESTA REPETINDO O MSM NUMERO 10X
+
 
 
